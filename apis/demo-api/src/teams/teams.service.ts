@@ -1,5 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { ITeam } from 'types';
+import { ICreateTeam } from 'types';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Team } from './entities';
 import { Repository } from 'typeorm';
@@ -27,7 +27,7 @@ export class TeamsService {
     return this.teamRepository.findOneByOrFail({ commonName: name });
   }
 
-  async createBulk(teams: Array<ITeam>) {
+  async createBulk(teams: Array<ICreateTeam>) {
     try {
       const entities = teams.map((team) => this.teamRepository.create(team));
 

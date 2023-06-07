@@ -1,6 +1,7 @@
 import { CountryEnum } from '../common';
 
 export interface ITeam {
+  id: number;
   name: string;
   commonName: string;
   season: string;
@@ -13,3 +14,5 @@ export interface ITeam {
   lossesHome: number;
   lossesAway: number;
 }
+
+export type ICreateTeam = Omit<ITeam, 'id'>;

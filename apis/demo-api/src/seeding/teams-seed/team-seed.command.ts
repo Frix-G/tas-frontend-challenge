@@ -2,7 +2,7 @@ import { Logger } from '@nestjs/common';
 import { Command, CommandRunner } from 'nest-commander';
 import csv from 'csvtojson';
 import { createReadStream } from 'fs';
-import { ITeam } from 'types';
+import { ICreateTeam } from 'types';
 import { TeamsService } from '../../teams/teams.service';
 import { IRawTeam } from './raw-team.interface';
 
@@ -24,7 +24,7 @@ export class TeamSeedCommand extends CommandRunner {
     const stream = createReadStream(filename);
     const rawTeams = await csv().fromStream(stream);
 
-    const teams: Array<ITeam> = rawTeams.map((team: IRawTeam) => ({
+    const teams: Array<ICreateTeam> = rawTeams.map((team: IRawTeam) => ({
       name: team.team_name,
       commonName: team.common_name,
       country: team.country,

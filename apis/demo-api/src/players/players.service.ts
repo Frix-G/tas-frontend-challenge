@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Player } from './entities';
-import { IPlayer } from 'types';
+import { ICreatePlayer, IPlayer } from 'types';
 import { TeamsService } from '../teams/teams.service';
 
 @Injectable()
@@ -13,7 +13,7 @@ export class PlayersService {
     private readonly teamsService: TeamsService,
   ) {}
 
-  async create(player: IPlayer, teamName: string): Promise<void> {
+  async create(player: ICreatePlayer, teamName: string): Promise<void> {
     const team = await this.teamsService.findByName(teamName);
     const entity = this.playerRepository.create({ ...player, team });
 
