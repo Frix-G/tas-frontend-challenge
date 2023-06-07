@@ -39,7 +39,7 @@ export const NavBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#ad20ba' }}>
+    <AppBar position="static" sx={{ backgroundColor: '#3854b2' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link href="/">
