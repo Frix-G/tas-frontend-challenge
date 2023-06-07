@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
 import { TeamDetails } from '@/teams';
 
 const TeamDetailPage = () => {
@@ -9,7 +10,11 @@ const TeamDetailPage = () => {
     return null;
   }
 
-  return <TeamDetails teamId={teamId} />;
+  return (
+    <motion.div animate={{ rotate: 360 }} transition={{ type: 'spring' }}>
+      <TeamDetails teamId={teamId} />
+    </motion.div>
+  );
 };
 
 export default TeamDetailPage;

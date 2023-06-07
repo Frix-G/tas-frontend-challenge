@@ -12,6 +12,8 @@
       used [nivo chart](https://nivo.rocks/) to display it.
       Nivo provides a rich set of dataviz components, built on top of D3.js and React.
 
+      The page has also an animation on load. It is done using [framer motion](https://www.framer.com/motion/)
+
 - `apis/demo-api`: a [Nest.js](https://docs.nestjs.com/) rest api
     - I've used nestjs has REST API to serve the data.
       Postgres store the data
@@ -69,6 +71,15 @@ yarn run build
 
 For now I've putted the docker integration on hold since it was taking more time than expected
 The monorepo makes it a little more complicated than usual
+
+## What's next ?
+
+Here a set of ideas that could be applied
+
+1. Create a micro front-end to manage "favourite teams" with a zustand state / store that can be shared with the main
+   app
+2. Put the API behind an api gateway to protect it and for example limit number of request by second
+3. Add git hooks to prevent devs to push code that can't build or if the linter fails
 
 ## Useful Links
 
