@@ -8,6 +8,9 @@
     - MUI is used to build the UI
     - The table of teams in the home page use
       @mui/x-data-grid to display the grid and add the sort / filters / paging features
+    - The team page contains a bar chart showing the total of minutes played for each person in the top 3. I've
+      used [nivo chart](https://nivo.rocks/) to display it.
+      Nivo provides a rich set of dataviz components, built on top of D3.js and React.
 
 - `apis/demo-api`: a [Nest.js](https://docs.nestjs.com/) rest api
     - I've used nestjs has REST API to serve the data.
@@ -32,6 +35,8 @@ This turborepo has some additional tools already setup for you:
 ### Develop
 
 To develop all apps and packages, run the following command:
+
+Note: make sure you have node v18.13.0 (if you don't use cli plugin to use nvmrc)
 
 ```
 cd tas-frontend-challenge
