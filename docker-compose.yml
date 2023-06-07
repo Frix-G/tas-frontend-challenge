@@ -23,11 +23,11 @@ services:
   #    restart: always
   #    ports:
   #      - 9000:9000
-  tas-api:
-    container_name: tas-api
-    build:
-      context: .
-      dockerfile: ./apis/demo-api/Dockerfile
-    restart: always
-    ports:
-      - 10000:10000
+#  tas-api:
+#    container_name: tas-api
+#    build:
+#      context: .
+#      dockerfile: ./apis/demo-api/Dockerfile
+#    restart: always
+#    ports:
+#      - 10000:10000
