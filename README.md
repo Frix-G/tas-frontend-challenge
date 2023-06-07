@@ -1,8 +1,6 @@
-# G. FRIX demo app
+# TAS frontend challenge
 
 ## What's inside?
-
-This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
 
 ### Apps and Packages
 
