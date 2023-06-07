@@ -42,6 +42,7 @@ Note: make sure you have node v18.13.0 (if you don't use cli plugin to use nvmrc
 
 ```
 cd tas-frontend-challenge
+cp .env.example .env
 docker-compose up -d
 yarn
 yarn run build
