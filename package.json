@@ -1,0 +1,31 @@
+{
+  "name": "tas-frontend-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/Frix-G/tas-frontend-challenge.git",
+  "workspaces": [
+    "apps/*",
+    "apis/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "postinstall-d": "manypkg check"
+  },
+  "devDependencies": {
+    "prettier": "2.8.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "turbo": "latest",
+    "@manypkg/cli": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
+  },
+  "dependencies": {},
+  "packageManager": "yarn@1.22.19"
+}

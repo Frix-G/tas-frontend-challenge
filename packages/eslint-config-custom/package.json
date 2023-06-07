@@ -1,0 +1,35 @@
+{
+  "name": "eslint-config-custom",
+  "version": "0.0.0",
+  "files": [
+    "base.js",
+    "react.js",
+    "next.js",
+    "nest.js"
+  ],
+  "dependencies": {
+    "eslint": "8.32.0",
+    "eslint-config-next": "^13.1.5",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-config-turbo": "latest",
+    "prettier": "^2.8.3",
+    "eslint-config-eslint": "^7.0.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sonarjs": "^0.18.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-jsdoc": "^39.6.8",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-github": "^4.6.0",
+    "@typescript-eslint/parser": "5.49.0",
+    "@typescript-eslint/eslint-plugin": "5.49.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-import-resolver-typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "typescript": "4.9.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
