@@ -4,7 +4,7 @@ export const useRedirectToTeamPage = () => {
   const { push } = useRouter();
 
   return {
-    redirectToProductsPage: (teamId: string) => {
+    redirectToProductsPage: (teamId: string | number) => {
       push(`/teams/${teamId}`);
     },
   };
