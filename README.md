@@ -78,8 +78,9 @@ Here a set of ideas that could be applied
 
 1. Create a micro front-end to manage "favourite teams" with a zustand state / store that can be shared with the main
    app
-2. Put the API behind an api gateway to protect it and for example limit number of request by second
-3. Add git hooks to prevent devs to push code that can't build or if the linter fails
+2. Translate the front-end using intl
+3. Put the API behind an api gateway to protect it and for example limit number of request by second
+4. Add git hooks to prevent devs to push code that can't build or if the linter fails
 
 ## Useful Links
 
